@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Laranja: hsl(25, 97%, 53%);
+    --Branco: hsl(0, 0%, 100%);
+    --Cinza-claro: hsl(217, 12%, 63%);
+    --Cinza-medio: hsl(216, 12%, 54%);
+    --Azul-escuro: hsl(212, 19%, 15%);
+    --Azul-muito-escuro: hsl(216, 12%, 8%);
+    --secundaria: hsl(213deg, 20%, 22%);
+}
+
+body {
+    background-color: var(--Azul-muito-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Overpass';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.avaliacao {
+    background: var(--Azul-escuro);
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.icone-estrela {
+    background-color: var(--secundaria);
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo {
+    color: var(--Branco);
+    margin-bottom: 1rem;
+}
+
+.descricao {
+    color: var(--Cinza-claro);
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.estrelas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.avaliacao .estrelas .numero-avaliacao {
+    background-color: var(--secundaria);
+    color: var(--Cinza-medio);
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.botao {
+    background-color: var(--Laranja);
+    border: none;
+    font-size: 13px;
+    color: var(--Branco);
+    width: 100%;
+    padding: .8rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao:hover {
+    color: var(--Laranja);
+    background-color: var(--Branco);
+}
+
+.agradecimento {
+    background: var(--Azul-escuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.logo-agradecimento {
+    margin-bottom: 2rem;
+}
+
+.agradecimento .res-agradecimento {
+    background-color: var(--secundaria);
+    color: var(--Laranja);
+    font-size: 15px;
+    padding: .4rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.agradecimento .titulo {
+    margin-bottom: .5rem;
+}
+
+.agradecimento .descricao {
+    margin-bottom: 0;
+}
+
+
+footer {
+    color: var(--secundaria);
+    margin: .5rem;
+}
+
+footer a {
+    color: var(--Laranja);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: var(--Branco);
+}
+
+.escondido {
+    display: none;
+}
