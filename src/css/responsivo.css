@@ -1,0 +1,21 @@
+@media (max-width: 430px) {
+    .avaliacao {
+        width: 80vw;
+    }
+
+    .agradecimento {
+        width: 80vw;
+    }
+
+    footer {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 380px) {
+    .avaliacao .estrelas .numero-avaliacao {
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+}

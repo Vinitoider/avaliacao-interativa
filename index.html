@@ -9,27 +9,27 @@
   <title>Avaliação Interativa</title>
 
   <link rel="stylesheet" href="src/css/reset.css">
-  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsivo.css">
 </head>
 <body>
 
 <main>
-  <section class="avaliacao ">
+  <section class="avaliacao">
       <div class="icone-estrela">
         <img src="src/images/icon-star.svg" alt="Icone de Estrela">
       </div>
       <h1 class="titulo">Como nos saímos?</h1>
       <p class="descricao">Por favor avalie sua experiência com nosso suporte. Todo feedback é útil para nos ajudar a melhorar nossos serviços!</p>
-      <form action="">
-        <ul class="estrelas">
-          <li class="numero-avaliacao">1</li>
-          <li class="numero-avaliacao">2</li>
-          <li class="numero-avaliacao">3</li>
-          <li class="numero-avaliacao">4</li>
-          <li class="numero-avaliacao">5</li>
-        </ul>
-        <button class="botao">Enviar</button>
-      </form>
+      
+      <ul class="estrelas">
+        <li class="numero-avaliacao">1</li>
+        <li class="numero-avaliacao">2</li>
+        <li class="numero-avaliacao">3</li>
+        <li class="numero-avaliacao">4</li>
+        <li class="numero-avaliacao">5</li>
+      </ul>
+      <button class="botao">Enviar</button>
   </section>
 
   <section class="agradecimento escondido">
@@ -37,7 +37,7 @@
       <img src="src/images/illustration-thank-you.svg" alt="Logo de agradecimento">
     </div>
     <div class="res-agradecimento">
-      
+      Você selecionou <span class="qntd-estrelas"></span> de 5
     </div>
     <h1 class="titulo">Obrigado!</h1>
     <p class="descricao">Nós agradecemos pelo seu tempo gasto nos avaliando. Caso precise de mais suporte, não se preocupe em nos chamar!</p>
@@ -51,5 +51,6 @@
   </div>
 </footer>
 
+<script src="src/js/index.js"></script>
 </body>
 </html>
